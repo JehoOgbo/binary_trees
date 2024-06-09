@@ -4,7 +4,7 @@
  * binary_tree_preorder - goes through a binary tree using preorder traversal
  *
  * @tree: tree to be traversed
- * @(*func)(int): integer function to which the value of the node is to be passed
+ * @func: integer function to which value of the node is to be passed
  *
  * Return: void
  */

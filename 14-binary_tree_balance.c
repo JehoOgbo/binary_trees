@@ -7,7 +7,7 @@
  * @tree: pointer to the root node of the tree whose balance factor is
  *			required
  * @one_off: variable to show when to return the left height
- * Return: height of left branch of the treeC:\Users\HP\Documents\200L\electrical-and-electronic-principles-and-technology-john-bird.pdf
+ * Return: height of left branch of the tree
  */
 int binary_tree_balance_left(const binary_tree_t *tree, int one_off)
 {
@@ -65,8 +65,14 @@ int binary_tree_balance_right(const binary_tree_t *tree, int one_off)
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
+	int left_bal;
+	int right_bal;
+
 	if (tree == NULL)
 		return (0);
 
-	return(binary_tree_balance_left(tree, 1) - binary_tree_balance_right(tree, 1));
+	left_bal = binary_tree_balance_left(tree, 1);
+	right_bal = binary_tree_balance_right(tree, 1);
+
+	return (left_bal - right_bal);
 }

@@ -7,10 +7,10 @@
  *
  * Return: 0 if tree is NULL and size of the tree otherwise
  */
-size_t b_size(const binary_tree_t *tree)
+int b_size(const binary_tree_t *tree)
 {
-	size_t size_l;
-	size_t size_r;
+	int size_l;
+	int size_r;
 
 	if (!tree)
 		return (0);
@@ -27,10 +27,10 @@ size_t b_size(const binary_tree_t *tree)
  * @tree: pointer to the root node of the tree
  * Return: height of the tree or 0 if tree is NULL
  */
-size_t height(const binary_tree_t *tree)
+int height(const binary_tree_t *tree)
 {
-	size_t height_l;
-	size_t height_r;
+	int height_l;
+	int height_r;
 
 	if (tree == NULL)
 		return (0);

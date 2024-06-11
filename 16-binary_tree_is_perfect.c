@@ -41,12 +41,13 @@ int height(const binary_tree_t *tree)
 
 /**
  * binary_tree_is_perfect - checks to see if a binary tree is perfect
- * Description: a binary tree is said to be perfect if it is both full and has 0 balance factor
+ * Description: a binary tree is said to be perfect if it is both full
+ * and has 0 balance factor
  *
  * @tree: pointer to the parent node of tree to be checked
  * Return: 0 if tree is NULL or if imperfect, 1 otherwise
  */
-int binary_tree_is_perfect(const binary_tree_t* tree)
+int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int perfect_size;
 	int size;
